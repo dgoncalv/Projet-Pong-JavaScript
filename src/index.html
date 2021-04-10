@@ -1,0 +1,65 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <title>PONG</title>
+</head>
+
+<body>
+    <section id="saveScore">
+        <img id="imgTrophee" src="images/trophee.png" width="200px">
+        <input id="inputScore" class="form-control" type="text" placeholder="Incrivez votre nom">
+        <button id="saveScoreButton">Enregistrer</button>
+        <article id="scoreDisplay"></article>
+        <button id="closeScoreButton">Fermer</button>
+    </section> 
+
+    <div id="timer">10000</div>
+
+    <div class="titre">
+        <h1>Pong</h1>
+    </div>
+    <main id="main" role="main">
+        <div>
+            <div class="instructionsContainer">
+                <div class="touches">
+                    <img id="imgSouris" src="images/souris.png" width="200px">
+                </div>
+                <div id="j1" class="score">
+                    <p class="scoreTitle">SCORE</p>
+                    <p>Joueur 1 <br><span id="joueur1">0</span></p>
+                </div>
+            </div>
+
+            <div class="plateau">
+                <canvas id="drawArea" width="1000" height="600">Your browser doesn't support canvas</canvas>
+            </div>
+
+            <div class="instructionsContainer">
+                <div class="touches">
+                    <img id="imgSouris" src="images/touches.png" width="200px">
+                </div>
+                <div id="j2" class="score">
+                    <p class="scoreTitle">SCORE</p>
+                    <p>Joueur 2 <br><span id="joueur2">0</span></p>
+                </div>
+            </div>
+        </div>
+        <div class="bouton">
+            <div class="lancer">
+                <button id="start">Démarrer</button>
+            </div>
+            <div class="stoper">
+                <button id="stop">Arrêter</button>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
